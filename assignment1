@@ -1,0 +1,10 @@
+def even odd(n):
+   if n%2==0:
+       return True
+  else:
+       return false
+ n=int(input())
+ if evenodd(n):
+      print("Given no is even")
+  else:
+      print("Given no is odd")
