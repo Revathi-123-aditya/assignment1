@@ -1,0 +1,22 @@
+Class solution:
+    def subarraySum(self,nums:list[int],k:int)
+    n=len(nums)
+     i+n==0
+        return 0
+     count=0
+     dic={}
+     curt_sum=0
+     for i in range(n):
+           curr_sum=nums[i]
+           if(curr_sum==k):
+                count+=1
+           if(curr_sum-k in dic):
+                count+=dic[curr_sum-k]
+            if(curr_sum in dic):
+                dic[curr_sum]+=1
+             else:
+                dic[curt_sum]=1
+          return count
+          
+
+
